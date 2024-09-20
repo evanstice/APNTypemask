@@ -7,4 +7,4 @@ class Typemask:
 
     def getTypemask(self):
         if self.vvmEnabled == True:
-            self.typemask += 0 # need to add real values
+            self.typemask += 0 # need to add real values.
