@@ -11,8 +11,8 @@ class Typemask:
         self.mmsIncrement = 0
 
         if carrier == 1:
-            self.vvmIncrement = 2
             self.dataIncrement = 1
+            self.vvmIncrement = 2
             self.mmsIncrement = 4
 
     def getTypemask(self):
@@ -22,3 +22,6 @@ class Typemask:
             self.typemask += self.dataIncrement
         if self.mmsEnabled:
             self.typemask += self.mmsIncrement
+
+        return self.typemask
+
