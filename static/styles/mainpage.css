@@ -1,0 +1,26 @@
+body {
+    background-color: #454652;
+    text-align: center;
+    color: white;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 700;
+}
+
+input[type='radio'] {
+     transform: scale(2);
+ }

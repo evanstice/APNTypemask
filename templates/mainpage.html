@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>APN Settings Creator</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    </head>
+    <body>
+        <h1>iPhone APN Settings Enabler</h1>
+        <p>Enable customization for data, MMS, VVM, and other APN settings.</p>
+        <h3>Select your carrier</h3>
+        <form action = "mainpage.html" method = "post">
+            <label class="form-control">
+                <input type ="radio" name="selection" value="1">
+                Verizon
+            </label>
+            <label class="form-control">
+                <input type ="radio" name="selection" value="2">
+                AT&T
+            </label>
+            <label class="form-control">
+                <input type ="radio" name="selection" value="3">
+                T-Mobile
+            </label>
+            <br>
+            <input type = "submit" value = "Next" />
+        </form>
+    </body>
+</html>
