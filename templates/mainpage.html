@@ -2,28 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>APN Settings Creator</title>
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
     </head>
     <body>
         <h1>iPhone APN Settings Enabler</h1>
         <p>Enable customization for data, MMS, VVM, and other APN settings.</p>
+        <div class="selection">
         <h3>Select your carrier</h3>
-        <form action = "mainpage.html" method = "post">
-            <label class="form-control">
-                <input type ="radio" name="selection" value="1">
-                Verizon
-            </label>
-            <label class="form-control">
-                <input type ="radio" name="selection" value="2">
-                AT&T
-            </label>
-            <label class="form-control">
-                <input type ="radio" name="selection" value="3">
-                T-Mobile
-            </label>
-            <br>
-            <input type = "submit" value = "Next" />
+        <form action = "mainpage.html" method = "GET">
+            <button type="submit" name="option" value="1" class="btn">Verizon</button>
+            <button type="submit" name="option" value="2" class="btn">AT&T</button>
+            <button type="submit" name="option" value="3" class="btn">T-Mobile</button>
         </form>
+        </div>
     </body>
 </html>

@@ -4,6 +4,7 @@ body {
     color: white;
     font-family: "Nanum Gothic", sans-serif;
     font-weight: 400;
+    margin-top: 10px;
 }
 
 h1 {
@@ -11,7 +12,8 @@ h1 {
     color: white;
     font-family: "Nanum Gothic", sans-serif;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 45px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -24,3 +26,25 @@ h3 {
 input[type='radio'] {
      transform: scale(2);
  }
+
+.btn {
+  display: inline-block;
+  background-color: #5a596f;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2b2a3a;
+}
+
+.selection {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+}
