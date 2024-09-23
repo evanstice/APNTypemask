@@ -10,7 +10,7 @@ class Typemask:
         self.dataIncrement = 0
         self.mmsIncrement = 0
 
-        if carrier == 1:
+        if carrier == 'T-Mobile':
             self.dataIncrement = 1
             self.vvmIncrement = 2
             self.mmsIncrement = 4
@@ -25,3 +25,20 @@ class Typemask:
 
         return self.typemask
 
+    def toggleVVM(self):
+        if self.vvmEnabled:
+            self.vvmEnabled = False
+        else:
+            self.vvmEnabled = True
+
+    def toggleMMS(self):
+        if self.mmsEnabled:
+            self.mmsEnabled = False
+        else:
+            self.mmsEnabled = True
+
+    def toggleData(self):
+        if self.dataEnabled:
+            self.dataEnabled = False
+        else:
+            self.dataEnabled = True
